@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+</style>
+<meta charset="UTF-8">
+<title>intraday</title>
+
+<table id="intraday" style="width:100%">
+    <tbody>
+        {% if result %}
+        <tr>
+            <th> symbol </th>
+            <th> qty </th>
+            <th> entry_date </th>
+            <th> entry_time </th>
+            <th> entry_datetime </th>
+            <th> exit_datetime </th>
+            <th> entry_price </th>
+            <th> tick_value </th>
+            <th> atr_value </th>
+            <th> wtr_ref </th>
+            <th> profit_loss </th>
+            <th> runup </th>
+            <th> drawdown </th>
+        </tr>
+        {% for row in result %}
+        <tr>
+            <td> {{ row.symbol }} </td>
+            <td> {{ row.qty }} </td>
+            <td> {{ row.entry_date }} </td>
+            <td> {{ row.entry_time }} </td>
+            <td> {{ row.entry_datetime }} </td>
+            <td> {{ row.exit_datetime }} </td>
+            <td> {{ row.entry_price }} </td>
+            <td> {{ row.tick_value }} </td>
+            <td> {{ row.atr_value }} </td>
+            <td> {{ row.wtr_ref }} </td>
+            <td> {{ row.profit_loss }} </td>
+            <td> {{ row.runup }} </td>
+            <td> {{ row.drawdown }} </td>
+        </tr>
+        {% endfor %}
+        {% endif %}
+    </tbody>
+</table>
+
+
