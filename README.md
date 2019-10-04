@@ -1,2 +1,2 @@
 # TutoRepo-Py-Flask
-Tutoring Flask. Flask snippets
+Dash, Flask. Flask snippets. Terrible repo, mostly for testing purposes. 
