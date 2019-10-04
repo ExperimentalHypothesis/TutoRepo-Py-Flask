@@ -1,2 +1,2 @@
 # TutoRepo-Py-Flask
-Dash, Flask. Flask snippets. Terrible repo, mostly for testing purposes. 
+Dash, Plotly, Flask - Sippets. Terribly unsorted repo, mostly for testing purposes. 
